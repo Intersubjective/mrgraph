@@ -3,18 +3,14 @@ use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
 use itertools::Itertools;
 
-// External crate imports
-use lazy_static::lazy_static;
-
 use crate::error::GraphManipulationError;
 use crate::error::GraphManipulationError::UnknownContextFailure;
 
-// Current crate (`crate::`) imports
 pub use meritrank::NodeId;
 use meritrank::{MeritRank, MyGraph};
 
 // Singleton instance
-lazy_static! {
+lazy_static::lazy_static! {
     pub static ref GRAPH: Arc<Mutex<GraphSingleton>> = Arc::new(Mutex::new(GraphSingleton::new()));
 }
 

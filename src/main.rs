@@ -1,7 +1,6 @@
-use meritrank::{MeritRank, MyGraph};
-use mrgraph::GraphSingleton;
-use mrgraph::mrgraph::GRAPH;
 use itertools::Itertools;
+use meritrank::MyGraph;
+use mrgraph::{GRAPH, GraphSingleton};
 
 fn task() -> Result<(), Box<dyn std::error::Error + 'static>> {
     // create merit rank

@@ -1,4 +1,15 @@
 pub mod mrgraph;
-pub mod error;
 
 pub use mrgraph::GraphSingleton;
+pub use mrgraph::GRAPH;
+
+pub mod error;
+
+mod meritrank {
+    pub struct MeritRank;
+    pub struct MeritRankError;
+    pub struct MyGraph;
+    pub struct Weight;
+}
+
+

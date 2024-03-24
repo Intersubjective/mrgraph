@@ -1,6 +1,6 @@
 [package]
 name = "mrgraph"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 description = "High-level Meritrank library"
 license = "MIT"
@@ -19,7 +19,7 @@ path = "src/lib.rs"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-meritrank2 = "0.5.1"
+meritrank2 = "0.5.2"
 itertools = "0.12.0"
 lazy_static = "1.4"
 thiserror = "1.0.58"
